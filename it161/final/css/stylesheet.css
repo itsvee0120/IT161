@@ -424,7 +424,9 @@ footer {
     bottom: 0;
     position: fixed; /* or use 'absolute' if you prefer */
     width: 100%; /* Ensure footer spans the full width */
-    z-index: 0; /* Set a low z-index to keep it at the bottom */ 
+    z-index: 0;
+   margin-bottom: 20px; /* Set a low z-index to keep it at the bottom */ 
+
 }
 footer ul {
     margin-left: 20px;

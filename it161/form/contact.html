@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form Homework</title>
+    <link href="css/stylesheet.css" type="text/css"
+    rel="stylesheet">
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <a href="">
+                <img src="images/logo.png" alt="logo">
+            </a>
+        </header>
+    <main>
+    <h1> Contact Us Today!</h1>
+    <form action="formhandler.php" method="post">
+        <fieldset>
+            <legend> Contact Violet</legend>
+            <label>Name</label>
+            <input type="text" name="name">
+            <label>Email</label>
+            <input type="email" name="email">
+
+            <label>Gender</label>
+            <ul>
+                <li><input type="radio" name="gender" value="female">Female</li>
+                <li><input type="radio" name="gender" value="male">Male</li>
+                <li><input type="radio" name="gender" value="other">Other</li>
+            </ul>
+
+            <label>Favorite Wines</label>
+            <ul>
+                <li><input type="checkbox" name="wines[]" value="cab">Cabernet</li>
+                <li><input type="checkbox" name="wines[]" value="merlot">Merlot</li>
+                <li><input type="checkbox" name="wines[]" value="malbec">Malbec</li>
+                <li><input type="checkbox" name="wines[]" value="syrah">Syrah</li>
+            </ul>
+
+            <label>Regions</label>
+            <select name="regions">
+                <option value="">Select one</option>
+                <option value="nw">Northwest</option>
+                <option value="sw">Southwest</option>
+                <option value="mw">Midwest</option>
+                <option value="so">South</option>
+                <option value="ne">Northeast</option>
+            </select>
+
+            <label>Comments</label>
+            <textarea name="comments"></textarea>
+            <input type="submit" name="submit" value="Send it!">
+
+            <p><a href="">Reset</a></p>
+
+
+        </fieldset>
+    </form>
+</main>
+
+<aside>
+
+<h3>This is my wonderful aside</h3>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    Vestibulum sagittis felis eu odio blandit, eget tincidunt 
+    nisl varius. Nulla facilisi. Sed eget odio vel libero 
+    finibus vehicula. Phasellus in ipsum nec lacus
+    tristique consequat. Integer ac metus nec magna faucibus lobortis.
+    Nullam et tellus vel sem euismod varius. Suspendisse potenti.
+    hendrerit.</p>
+<img id="wine" src="images/wine.png" alt="wine barrels">
+
+</aside>
+
+<footer>
+    <ul>
+        <li>Copyright &copy; 2024</li>
+        <li>All Rights Reserved</li>
+        <li><a href="../index.html">Web Design By Violet</a></li>
+        <li><a href="https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fnorth.mystudentswa.com%2Fvioletng%2Fit161%2Fform%2Fcontact.html">Validate</a></li>
+        </ul>
+</footer>
+
+</div><!--wrapper end-->
+</body>
+</html>

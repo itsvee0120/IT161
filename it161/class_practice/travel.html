@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding:0;
+            box-sizing: border-box;
+        }
+
+        body{
+            background-color:lightgrey;
+
+        }
+
+        #wrapper {
+        width: 940px;
+        margin: 20px auto;
+        overflow: hidden;
+        background:lightblue;
+            }
+
+
+        header{
+            background-color: blue;
+            height: 200px;
+        }
+
+        
+
+        nav {
+        height: 50px;
+        line-height: 50px;
+        background-color:yellow;
+        }
+
+        nav li {
+        list-style-type: none;
+        float: left;
+        width: 14.28%;
+        text-align: center;
+        }
+
+        nav a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        font-size: large;
+        display: block;
+        }
+
+        nav a:hover {
+        background: black;
+        color: white;
+        }
+
+        .first li:nth-child(1) a,
+        .second li:nth-child(2) a,
+        .third li:nth-child(3) a,
+        .fourth li:nth-child(4) a,
+        .fifth li:nth-child(5) a,
+        .sixth li:nth-child(6) a,
+        .last li:nth-child(7) a{
+        background: black;
+        color: white;
+        }
+
+    .third {
+    background-color: red;
+    width:300px; /* Calculate width for each box with padding */
+    height: 300px;
+    float: left;
+    margin-right: 20px; /* Add right margin for spacing */
+}
+
+.third:nth-of-type(2){
+    background-color: aliceblue;
+}
+
+
+.third:nth-of-type(3){
+    background-color: lightpink;
+    margin-right: 0;
+}
+
+    </style>
+</head>
+
+
+<body class="first">
+    <div id="wrapper">
+       <header>
+       
+       </header>
+
+
+        <nav>
+            <ul>
+                <li><a href="">First</a></li>
+                <li><a href="">Second</a></li>
+                <li><a href="">Third</a></li>
+                <li><a href="">Fourth</a></li>
+                <li><a href="">Fifth</a></li>
+                <li><a href="">Sixth</a></li>
+                <li><a href="">Last</a></li>
+            </ul>
+        
+        </nav>
+
+        <div class="third">
+          
+        </div><!--one end-->
+
+
+        <div class="third">
+           
+        </div><!--two end-->
+
+
+        <div class="third">
+         
+        </div><!--three end-->
+
+        <footer>
+
+
+        </footer>
+    </div><!--wrapper end-->
+    
+</body>
+</html>
+        

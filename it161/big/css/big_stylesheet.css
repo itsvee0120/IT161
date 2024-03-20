@@ -1,0 +1,103 @@
+/* Style sheet for Big Page */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family:"Lucida Bright", sans-serif; 
+    letter-spacing: 0.25px;
+    line-height: 1.5;
+    background-image:url(images/background1.jpg);
+    background-size: cover;
+    
+}
+
+div#wrapper {
+    width: 940px;
+    margin: 20px auto;
+    padding:20px;
+    overflow: hidden;
+    background: rgba(32, 29, 29, 0.7);
+}
+
+header{
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+  }
+
+main{
+    padding: 10px;
+}
+
+nav{
+    
+    height:50px;
+    line-height:50px;
+    border: 1px solid black;
+    background-color: rgb(255, 228, 196, .7);
+}
+
+
+nav li{
+    list-style-type: none;
+    float:left;
+    width:50%;
+    text-align: center;
+    
+}
+
+nav a{
+    text-decoration: none;
+    color: rgb(0, 2, 4);
+    font-weight:bold ;
+    font-size: large;
+    display: block;
+    border: 1px solid black;
+}
+
+nav a:hover{
+background:rgb(221, 158, 80, .5);
+font-size: larger;
+}
+
+.home li:nth-child(1) a,
+.big li:nth-child(2) a{
+background:rgb(221, 158, 80, .5);
+    
+}
+
+
+  footer{
+    height:50px;
+    line-height: 50px;
+    background:rgb(221, 158, 80, .7);
+    border: 2px solid black;
+    clear:both;
+  }
+
+  footer ul{
+    margin-left: 20px;
+  }
+
+  footer a{
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+  }
+
+  footer a:hover{
+    font-size: larger;
+  }
+  footer li{
+    list-style-type: none;
+    float: left;
+    width: 25%;
+    text-align: center;
+  }

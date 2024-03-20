@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us Page</title>
+    <link href="css/stylesheet.css" type="text/css" rel="stylesheet">
+</head>
+<body class="aboutus">
+    <header>
+        <a href="index.html">
+            <img id="logo" src="images/logo.png" alt="logo">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product.html">Product</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="wrapper">
+        <div id="container">
+            <h1>Welcome To Rejuvenate</h1>
+        </div><!--container end-->
+
+        <main>
+     <!-- Slideshow container -->
+      <!--original source: https://www.w3schools.com/howto/howto_js_slideshow.asp-->
+        <div class="slideshow-container">
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="images/photo3.jpg" alt="neck cream, woman">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="images/photo1.jpg" alt="tube of cream">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="images/photo2.jpg" alt="body cream, woman">
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div><!--slideshow-container end-->
+        <br>
+
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
+        </main>
+
+        
+        <div id="about-border">
+            <h3 id="h3-2">Our Testimony</h3>
+            <p>" At <b>Rejuvenate</b>, we believe that beauty is more than skin deep. 
+                With a passion for skincare and a commitment to excellence, 
+                we strive to provide our customers with the finest quality products
+                 that promote healthy, glowing skin. Our journey began with a simple mission
+                  - to empower individuals to embrace their natural beauty and feel confident
+                   in their own skin. "<br></p>
+            <h3><i>- Rejuvenate Team.</i></h3>
+        </div><!--about-border end-->
+
+        <div class="row">
+            <hr>
+            <h2>Meet Our Team</h2>
+            <div class="card">
+                <img src="images/woman3.jpg" alt="person 1">
+                <h3>Maria Sanchez</h3>
+                <p>Lorem ipsum dolor sit amet et
+                    delectus accommodare his consul copiosae
+                    legendos at vix ad putent delectus delicata usu. Vidit dissentiet eos
+                 </p>
+            </div><!--card one end-->
+
+            <div class="card">
+                <img src="images/woman2.jpg" alt="person 2">
+                <h3>Anita Rose</h3>
+                <p>Lorem ipsum dolor sit amet et
+                    delectus accommodare his consul copiosae
+                    legendos at vix ad putent delectus delicata usu. Vidit dissentiet eos
+                 </p>
+            </div><!--card two end-->
+
+            <div class="card">
+                <img src="images/man3.jpg" alt="person 3">
+                <h3>Ricky Jonhson</h3>
+                <p>Lorem ipsum dolor sit amet et
+                    delectus accommodare his consul copiosae
+                    legendos at vix ad putent delectus delicata usu. Vidit dissentiet eos
+                 </p>
+            </div><!--card three end-->
+        </div><!--row end-->
+    
+        <!--button scroll up-->
+        <!--source code: https://www.w3schools.com/howto/howto_js_scroll_to_top.asp -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Back to top</button>
+    </div><!--wrapper end-->
+
+    <footer>
+        <ul>
+            <li>Copyright &copy;2024</li>
+            <li>All Right Reserved</li>
+            <li><a href="./../index.html">Web Design By Violet</a></li>
+            <li><a href="https://validator.w3.org/nu/?showsource=yes&showimagereport=yes&doc=https%3A%2F%2Fnorth.mystudentswa.com%2Fvioletng%2Fit161%2Ffinal%2Fabout.html">Validated</a></li>
+        </ul>
+    </footer>
+
+    <!-- JavaScript code for slideshow-->
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += " active";
+        }
+
+       // JavaScript code for button
+        // Get the button:
+        let mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 10px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+        if (document.body.scrollTop > 15 || document.documentElement.scrollTop > 15) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+    </script>
+
+
+</body>
+</html>

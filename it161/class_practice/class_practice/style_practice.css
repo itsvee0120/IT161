@@ -1,0 +1,119 @@
+body {
+    font-family: Lucida Bright ;
+    letter-spacing: 0.25px;
+    line-height: 1.5;
+    background-image: url(images/background3.png);
+    background-size: cover;
+        
+    }
+
+    h1 {
+        text-align: center;
+    }
+    h2{
+        text-align: center;
+    }
+
+    img {
+        float:right;
+        width:300px;   
+        
+    }
+
+  
+    #wrapper{
+        width:940px;
+        padding:20px;
+        /*to center a box, use the margin property with the value below */
+        margin:0 auto 0 auto;
+        background-color: hsl(240, 17%, 77%, .87);
+       
+    }
+
+  #banner{
+    margin: 10px 0;
+    border: 1px solid #000000;
+    background-color:rgb(148, 130, 159);
+    }
+
+    a{
+        text-decoration: none;
+        color:rgb(98, 8, 104)
+        
+    }
+     a:hover{
+    font-weight: bold ;
+    font-size:large;
+    transition: all 0.375s;
+}
+#a1{
+    color: rgb(32, 110, 110);
+
+}
+
+#a1:hover{
+    font-weight:lighter ;
+    font-size: large;
+    transition: all 0.375s;
+}
+
+
+#valid{
+    width: 120px;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    background-color: rgb(149, 130, 167);
+    font-size: large;
+    text-align: center;
+    margin: auto;
+    
+    }
+#valid:hover{
+    font-weight: bolder ;
+    font-size: larger;
+    width: 130px;
+    background-color: rgb(118, 91, 141);
+    transition: all 0.23s;
+
+}
+
+
+    #strong1{
+        color:rgb(93, 15, 165);
+    }
+
+    #i1{
+        color:darkslategrey;
+    }
+
+    #hr1 {
+        height: 2px;  
+        width: 67%;
+        background-color: rgb(8, 8, 8);  
+        border: none;
+    }
+
+    #hr2{
+        height: 1.5px;
+        background-color: rgb(8, 8, 8);  
+        border: none;
+    }
+
+
+    footer {
+        height : 50px;
+        background : tan;
+        clear: both;
+        /* when you clear an element, you can
+        not add space above that element
+        with a margin top. You must use
+        margin-bottom on the element that
+        it had cleared */
+
+    }
+
+    img.left {
+        float: left;
+        margin-right:30px;
+        margin-bottom:20px;
+    }

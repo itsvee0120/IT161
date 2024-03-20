@@ -16,7 +16,7 @@ body{
 
 /* Wrapper */
 
-#wrapper {
+ #wrapper {
     width: 940px;
     margin: 140px auto 20px; /* Adjusted margin for 20px below header and nav */
     padding: 20px;
@@ -414,8 +414,8 @@ textarea{
 }
 /* Footer */
 footer {
-    margin-bottom: 0;
     height: 50px;
+    padding:100px;
     line-height: 50px;
     color: #ffffff;
     clear: both;

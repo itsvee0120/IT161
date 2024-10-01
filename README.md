@@ -14,4 +14,4 @@ IT161 is required to enter the Application Development Bachelor of Applied Scien
 
 Click the link below to view my projects visually:
 
-[Project Showcase](URL)
+[Project Showcase](https://itsvee0120.github.io/IT161/)
